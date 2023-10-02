@@ -1,0 +1,246 @@
+:root {
+	--color-main: #ffe0cb;
+	--color-second: #ffa55c;
+	--color-third: #ceaad0;
+	--color-footer: #ab8261;
+	--color-title: #1f1711;
+	--color-bg: #fff9f4;
+}
+
+.body {
+	font-family: Montserrat, Arial, sans-serif;
+	color: #312c27;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	background: var(--color-bg);
+}
+
+.body--opened-menu {
+	overflow: hidden;
+}
+
+.body--modal-opened {
+	overflow: hidden;
+}
+
+h2 {
+	font-family: Gabriola;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 90%;
+	color: var(--color-title);
+}
+
+h3 {
+	font-family: Gabriola;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 90%;
+	color: var(--color-title);
+}
+
+h4 {
+	color: #fff9f4;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%;
+	text-transform: uppercase;
+}
+
+.title {
+	font-family: Gabriola;
+	font-size: 74px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 82%;
+	color: var(--color-title);
+}
+
+button {
+	font-weight: 500;
+	line-height: 160%;
+}
+
+.btn {
+	display: flex;
+	width: 100%;
+	padding: 5px 15px;
+	height: 62px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 60px;
+	background: var(--color-second);
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%;
+	transition: all 0.5s;
+}
+
+.btn:hover {
+	background: #ff9138;
+}
+
+.p-upper {
+	line-height: 160%;
+	text-transform: uppercase;
+	color: #b197b2;
+	padding-bottom: 20px;
+}
+
+.wrapper {
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.gift {
+	position: fixed;
+	inset: 0;
+	z-index: 12;
+	background: hsla(0, 0%, 0%, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s;
+}
+
+.body--modal-opened .gift {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gift__window {
+	position: relative;
+	width: 428px;
+	height: 491px;
+	padding: 133px 60px 60px;
+	border-radius: 20px;
+	background: var(--color-bg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 13;
+}
+
+.gift__pancake {
+	position: absolute;
+	top: -65px;
+	left: 72px;
+	max-width: 240px;
+}
+
+.gift__close-btn {
+	width: 24px;
+	height: 24px;
+
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.gift__close-btn path,
+.gift__close-btn rect {
+	transition: all 0.4s;
+}
+
+.gift__close-btn:hover path,
+.gift__close-btn:hover rect {
+	stroke: #ac907a;
+}
+
+.gift__title {
+	margin: 0 0 10px;
+}
+
+.gift__form {
+	width: 100%;
+}
+
+.gift__lable {
+	position: relative;
+	display: block;
+	margin: 30px 0 10px;
+}
+
+.gift__lable span {
+	display: block;
+	color: #ac907a;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	position: absolute;
+	top: 12px;
+	left: 28px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s;
+}
+
+.gift__mail {
+	width: 100%;
+	min-height: 24px;
+	padding: 19px 28px;
+	border-radius: 100px;
+
+	border: 1px solid #ac907a;
+	transition: all 0.4s;
+}
+
+.gift__mail:hover {
+	border: 1px solid var(--color-second);
+}
+
+.gift__mail::placeholder {
+	color: var(--, #ac907a);
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	transition: all 0.4s;
+}
+
+.gift__mail:hover::placeholder {
+	color: var(--color-second);
+}
+
+.gift__mail:focus {
+	padding: 26px 28px 12px;
+	border: 1px solid var(--color-second);
+}
+
+.gift__mail:focus+span {
+	opacity: 1;
+	visibility: visible;
+}
+
+.our-school {
+	padding: 140px 0;
+}
+
+.program {
+	padding-bottom: 140px;
+}
