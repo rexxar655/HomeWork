@@ -1,0 +1,23 @@
+.block {
+  width: 500px;
+  font-size: 30px;
+}
+
+.block {
+  position: sticky;
+  background: rgb(155, 115, 115);
+}
+
+div {
+  background: rgb(126, 136, 224);
+  position: relative;
+}
+
+.slider {
+  position: relative;
+}
+.slider ::after {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}

@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+
+.block {
+	position: sticky;
+	background: $main-color;
+    @extend %templ;
+}
+
+@import 'blog';
+
+
+.slider{
+    position: relative;
+    & ::after{
+        @include pos (30%, 20%)
+    }
+}
